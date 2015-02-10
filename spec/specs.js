@@ -20,4 +20,7 @@ describe('pigLatin', function() {
   it('moves the letter "u" with the letter "q" to the end of the word and adds "ay"', function() {
     expect(pigLatin('trquarts')).to.equal('artstrquay');
   });
+  it('returns a sentences in pig latin', function(){
+    expect(pigLatin('this is a sentence')).to.equal('isthay isay aay entencesay');
+  });
 });
